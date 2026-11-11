@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>DownloadMaster - Unduh Video & File dari Link</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome 6 (Free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <i class="fas fa-cloud-download-alt icon-main"></i>
+                <h1>Download<span>Master</span></h1>
+                <p class="subhead">Unduh video & file dari berbagai tautan langsung</p>
+            </div>
+            
+            <!-- Input URL Section -->
+            <div class="input-group">
+                <label for="urlInput"><i class="fas fa-link"></i> Masukkan URL (Direct Link)</label>
+                <div class="url-input-wrapper">
+                    <input type="text" id="urlInput" placeholder="https://example.com/video.mp4 atau https://example.com/file.zip" autocomplete="off">
+                    <button id="analyzeBtn" class="btn-primary"><i class="fas fa-search"></i> Analisis</button>
+                </div>
+                <div class="hint"><i class="fas fa-info-circle"></i> Support: MP4, MKV, MOV, AVI, JPG, PNG, PDF, ZIP, RAR, MP3 & banyak lagi</div>
+            </div>
+            
+            <!-- Preview / Info Section -->
+            <div id="previewArea" class="preview-area hidden">
+                <div class="file-card">
+                    <div class="file-icon">
+                        <i id="fileTypeIcon" class="fas fa-file-video"></i>
+                    </div>
+                    <div class="file-details">
+                        <h3 id="fileName">nama_file.mp4</h3>
+                        <p id="fileSize"><i class="fas fa-database"></i> Ukuran: --</p>
+                        <p id="fileType"><i class="fas fa-tag"></i> Tipe: --</p>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button id="downloadBtn" class="btn-download"><i class="fas fa-download"></i> Download Sekarang</button>
+                    <button id="newDownloadBtn" class="btn-outline"><i class="fas fa-plus"></i> Link Baru</button>
+                </div>
+            </div>
+
+            <!-- Status / Error Messages -->
+            <div id="messageArea" class="message-area"></div>
+
+            <!-- Tips Section -->
+            <div class="tips">
+                <h4><i class="fas fa-lightbulb"></i> Catatan Penting</h4>
+                <ul>
+                    <li>Website ini bekerja dengan <strong>direct link</strong> (tautan langsung ke file/video).</li>
+                    <li>Contoh: URL yang berakhiran .mp4, .jpg, .pdf, .zip, .mkv, dll.</li>
+                    <li>Jika link memerlukan autentikasi atau redirect kompleks, unduhan mungkin gagal.</li>
+                    <li>Untuk video YouTube atau platform besar, gunakan layanan konversi khusus.</li>
+                    <li>File akan diunduh dengan nama asli dari URL atau nama default.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 DownloadMaster | Unduh file & video dengan mudah</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
