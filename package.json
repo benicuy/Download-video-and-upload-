@@ -1,0 +1,13 @@
+{
+  "name": "downloadmaster",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DownloadMaster: unduh video/foto dari direct link dan simpan upload foto & video",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
